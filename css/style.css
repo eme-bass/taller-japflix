@@ -26,3 +26,10 @@ main {
 .offcanvas-top{
     height: fit-content;
 }
+
+/* no me funcionó el modo oscuro con BootStrap */
+#lista .list-group-item {
+  background-color: #212529;
+  color: white;
+  border: 1px solid #444;
+}

@@ -9,7 +9,8 @@
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
-  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body class="bg-dark">
@@ -23,6 +24,34 @@
         </div>
       </div>
     </div>
+
+    <div class="offcanvas offcanvas-top bg-dark text-white" tabindex="-1" id="offcanvasTop">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="movieTitle"></h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+      </div>
+      <div class="offcanvas-body overflow-visible">
+        <p id="movieOverview"></p>
+        <hr>
+        <div class="d-flex justify-content-between">
+          <ul class="list-inline" id="movieGenres"></ul>
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle ms-auto" type="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              More
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark" id="dropdownInfo">
+              <li><h6 class="dropdown-header">Info interesante:</h6></li>
+              <li><a class="dropdown-item-text text-decoration-none" id="movieAnio"></a></li>
+              <li><a class="dropdown-item-text text-decoration-none" id="movieDurac"></a></li>
+              <li><a class="dropdown-item-text text-decoration-none" id="moviePresu"></a></li>
+              <li><a class="dropdown-item-text text-decoration-none" id="movieGanan"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
     <div class="album">
       <ul class="list-group container" id="lista">
@@ -41,7 +70,9 @@
     </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
 
 </body>
 
